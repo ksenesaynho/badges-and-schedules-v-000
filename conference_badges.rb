@@ -1,13 +1,13 @@
+attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
 def badge_maker(name)
-  "Hello, my name is #{name}"
+  "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(attendees)
-  sentences = []
-  attendees.each do |attendee|
-    sentences << "hello, my name is #{attendee}."
+  attendees.map do |attendee|
+    "Hello, my name is #{attendee}."
   end
-  sentences
 end
 
 def assign_rooms(attendees)
